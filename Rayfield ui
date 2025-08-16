@@ -2,10 +2,10 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 -- 初始化主窗口
 local Window = Rayfield:CreateWindow({
-    Name = "XIAOHE脚本 V0.1.0 BATA",
+    Name = "XIAOHE脚本 V1.0.0 正式版",
     Icon = 0,
-    LoadingTitle = "XIAOHE脚本V0.1.0 BATA（目前处于测试阶段）",
-    LoadingSubtitle = "祝你天天开心😁",
+    LoadingTitle = "XIAOHE脚本V1.0.0正式版",
+    LoadingSubtitle = "祝你玩得开心",
     Theme = "Bloom",
     DisableRayfieldPrompts = false,
     DisableBuildWarnings = false,
@@ -13,11 +13,11 @@ local Window = Rayfield:CreateWindow({
     KeySettings = {
         Title = "XIAOHE脚本",
         Subtitle = "卡密系统",
-        Note = "目前版本:0.1.0",
+        Note = "目前版本:1.0.0",
         FileName = "[FPS]枪地FAA",
         SaveKey = true,
         GrabKeyFromSite = false,
-        Key = {"XIAOHE0.1.0"}
+        Key = {"XIAOHE 30day_Rayfield UIhz3kw 5rty2Hd"}
     }
 })
     
@@ -35,13 +35,13 @@ local ParagraphExample = Tab1:CreateParagraph({
 -- 10. 段落(Paragraph)示例
 local ParagraphExample = Tab1:CreateParagraph({
     Title = "版本",
-    Content = "目前版本:0.2.0BATA\n上次版本:0.1.0BATA"
+    Content = "目前版本:1.0.0正式版\n上次版本:0.1.0BATA"
 })
 
 -- 10. 段落(Paragraph)示例
 local ParagraphExample = Tab1:CreateParagraph({
     Title = "更新",
-    Content = "上次更新时间:2025.8.15\n更新时间:2025.8.16"
+    Content = "上次更新时间:2025.8.16\n更新时间:2025.8.17"
 })
 
 -- 10. 段落(Paragraph)示例
@@ -53,7 +53,7 @@ local ParagraphExample = Tab1:CreateParagraph({
 -- 10. 段落(Paragraph)示例
 local ParagraphExample = Tab1:CreateParagraph({
     Title = "信息",
-    Content = "XIAOHE脚本隔五六天更换一次卡密\n更新了什么:使用云端更新"
+    Content = "XIAOHE脚本暂时停更\n更新了什么:使用云端更新"
 })
 
 -- 6. 按钮(Button)示例
