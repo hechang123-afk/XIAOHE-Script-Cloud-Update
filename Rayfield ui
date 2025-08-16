@@ -1,0 +1,605 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- 初始化主窗口
+local Window = Rayfield:CreateWindow({
+    Name = "XIAOHE脚本 V0.1.0 BATA",
+    Icon = 0,
+    LoadingTitle = "XIAOHE脚本V0.1.0 BATA（目前处于测试阶段）",
+    LoadingSubtitle = "祝你天天开心😁",
+    Theme = "Bloom",
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false,
+    KeySystem = true,
+    KeySettings = {
+        Title = "XIAOHE脚本",
+        Subtitle = "卡密系统",
+        Note = "目前版本:0.1.0",
+        FileName = "[FPS]枪地FAA",
+        SaveKey = true,
+        GrabKeyFromSite = false,
+        Key = {"XIAOHE0.1.0"}
+    }
+})
+    
+-- 创建标签页
+local Tab1 = Window:CreateTab("公告")
+local Tab2 = Window:CreateTab("人物")
+local Tab3 = Window:CreateTab("通用")
+
+-- 10. 段落(Paragraph)示例
+local ParagraphExample = Tab1:CreateParagraph({
+    Title = "公告",
+    Content = "作者QQ:806672492\n目前使用云端更新"
+})
+
+-- 10. 段落(Paragraph)示例
+local ParagraphExample = Tab1:CreateParagraph({
+    Title = "版本",
+    Content = "目前版本:0.2.0BATA\n上次版本:0.1.0BATA"
+})
+
+-- 10. 段落(Paragraph)示例
+local ParagraphExample = Tab1:CreateParagraph({
+    Title = "更新",
+    Content = "上次更新时间:2025.8.15\n更新时间:2025.8.16"
+})
+
+-- 10. 段落(Paragraph)示例
+local ParagraphExample = Tab1:CreateParagraph({
+    Title = "说明",
+    Content = "作者:鹤畅\n帮助者：无"
+})
+
+-- 10. 段落(Paragraph)示例
+local ParagraphExample = Tab1:CreateParagraph({
+    Title = "信息",
+    Content = "XIAOHE脚本隔五六天更换一次卡密\n更新了什么:使用云端更新"
+})
+
+-- 6. 按钮(Button)示例
+local ButtonExample = Tab1:CreateButton({
+    Name = "点击复制作者QQ号",
+    Callback = function()
+        print("按钮被点击了!")
+setclipboard("806672492")
+    end
+})
+
+-- 4. 滑块(Slider)示例
+local SliderExample = Tab2:CreateSlider({
+    Name = "速度",
+    Range = {0, 100},
+    Increment = 1,
+    CurrentValue = 50,
+    Flag = "SliderExample",
+    Callback = function(Value)
+        print("滑块值:", Value)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end
+})
+
+-- 4. 滑块(Slider)示例
+local SliderExample = Tab2:CreateSlider({
+    Name = "跳跃",
+    Range = {0, 100},
+    Increment = 1,
+    CurrentValue = 50,
+    Flag = "SliderExample",
+    Callback = function(Value)
+        print("滑块值:", Value)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+    end
+})
+
+-- 4. 滑块(Slider)示例
+local SliderExample = Tab2:CreateSlider({
+    Name = "重力",
+    Range = {0, 100},
+    Increment = 1,
+    CurrentValue = 50,
+    Flag = "SliderExample",
+    Callback = function(Value)
+        print("滑块值:", Value)
+game.Workspace.Gravity = Value
+    end
+})
+
+-- 4. 滑块(Slider)示例
+local SliderExample = Tab2:CreateSlider({
+    Name = "高度",
+    Range = {0, 100},
+    Increment = 1,
+    CurrentValue = 50,
+    Flag = "SliderExample",
+    Callback = function(Value)
+        print("滑块值:", Value)
+game.Players.LocalPlayer.Character.Humanoid.HipHeight = Value
+    end
+})
+
+-- 6. 按钮(Button)示例
+local ButtonExample = Tab2:CreateButton({
+    Name = "爬墙",
+    Callback = function()
+        print("按钮被点击了!")
+loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+    end
+})
+
+-- 6. 按钮(Button)示例
+local ButtonExample = Tab2:CreateButton({
+    Name = "无限跳",
+    Callback = function()
+        print("按钮被点击了!")
+loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+    end
+})
+
+-- 6. 按钮(Button)示例
+local ButtonExample = Tab2:CreateButton({
+    Name = "重置",
+    Callback = function()
+        print("按钮被点击了!")
+game.Players.LocalPlayer.Character.Humanoid.Health=0
+    end
+})
+
+-- 6. 按钮(Button)示例
+local ButtonExample = Tab3:CreateButton({
+    Name = "飞行",
+    Callback = function()
+        print("按钮被点击了!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+    end
+})
+
+-- 6. 按钮(Button)示例
+local ButtonExample = Tab3:CreateButton({
+    Name = "飞车",
+    Callback = function()
+        print("按钮被点击了!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/vb/main/%E9%A3%9E%E8%BD%A6.lua"))()
+    end
+})
+
+-- 6. 按钮(Button)示例
+local ButtonExample = Tab3:CreateButton({
+    Name = "死亡笔记",
+    Callback = function()
+        print("按钮被点击了!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/%E6%AD%BB%E4%BA%A1%E7%AC%94%E8%AE%B0%20(1).txt"))()
+    end
+})
+
+-- 6. 按钮(Button)示例
+local ButtonExample = Tab3:CreateButton({
+    Name = "踏空行走",
+    Callback = function()
+        print("按钮被点击了!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+    end
+})
+
+-- 1. 切换开关(Toggle)示例
+local ToggleExample = Tab3:CreateToggle({
+    Name = "夜视",
+    CurrentValue = false,
+    Flag = "ToggleExample",
+    Callback = function(Value)
+        print("切换开关状态:", Value)
+if Value then
+
+		    game.Lighting.Ambient = Color3.new(1, 1, 1)
+
+		else
+
+		    game.Lighting.Ambient = Color3.new(0, 0, 0)
+
+		end
+    end
+})
+
+-- 6. 按钮(Button)示例
+local ButtonExample = Tab3:CreateButton({
+    Name = "低画质",
+    Callback = function()
+        print("按钮被点击了!")
+loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FpsBoost-9260"))()
+    end
+})
+
+-- 6. 按钮(Button)示例
+local ButtonExample = Tab3:CreateButton({
+    Name = "FPS显示",
+    Callback = function()
+        print("按钮被点击了!")
+loadstring(game:HttpGet("https://pastefy.app/d9j82YJr/raw",true))()
+    end
+})
+
+-- 全局变量
+local espEnabled = false
+local drawBox = true
+local drawDistance = true
+local drawRay = true
+local localPlayer = game.Players.LocalPlayer
+local character = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+local espObjects = {} -- 用于存储绘制的ESP对象
+
+-- 获取其他玩家列表
+local function getOtherPlayers()
+    local players = {}
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        if player ~= localPlayer then
+            table.insert(players, player)
+        end
+    end
+    return players
+end
+
+-- ESP功能
+local function toggleESP(enabled)
+    espEnabled = enabled
+    if espEnabled then
+        -- 启动ESP绘制
+        task.spawn(function()
+            while espEnabled do
+                local otherPlayers = getOtherPlayers()
+                for _, player in ipairs(otherPlayers) do
+                    local character = player.Character
+                    if character and character:FindFirstChild("HumanoidRootPart") then
+                        local rootPart = character.HumanoidRootPart
+                        local cf = workspace.CurrentCamera:WorldToViewportPoint(rootPart.Position)
+                        local distance = (workspace.CurrentCamera.CFrame.p - rootPart.Position).magnitude
+
+                        local espKey = player.UserId -- 使用玩家的UserId作为键
+
+                        -- 绘制 3D 四角方框
+                        if drawBox then
+                            if not espObjects[espKey] or not espObjects[espKey].boxLines then
+                                espObjects[espKey] = {}
+                                espObjects[espKey].boxLines = {}
+                                for i = 1, 4 do
+                                    espObjects[espKey].boxLines[i] = Drawing.new("Line")
+                                    espObjects[espKey].boxLines[i].Color = Color3.fromRGB(255, 0, 0)
+                                    espObjects[espKey].boxLines[i].Thickness = 2
+                                    espObjects[espKey].boxLines[i].Visible = true
+                                end
+                            end
+
+                            local characterSize = character:GetExtentsSize()
+                            local height = characterSize.Y * 2
+                            local width = characterSize.X * 1.5
+
+                            local top = cf.Y - height / 2
+                            local bottom = cf.Y + height / 2
+                            local left = cf.X - width / 2
+                            local right = cf.X + width / 2
+
+                            espObjects[espKey].boxLines[1].From = Vector2.new(left, top)
+                            espObjects[espKey].boxLines[1].To = Vector2.new(right, top)
+                            espObjects[espKey].boxLines[2].From = Vector2.new(left, bottom)
+                            espObjects[espKey].boxLines[2].To = Vector2.new(right, bottom)
+                            espObjects[espKey].boxLines[3].From = Vector2.new(left, top)
+                            espObjects[espKey].boxLines[3].To = Vector2.new(left, bottom)
+                            espObjects[espKey].boxLines[4].From = Vector2.new(right, top)
+                            espObjects[espKey].boxLines[4].To = Vector2.new(right, bottom)
+                        else
+                            if espObjects[espKey] and espObjects[espKey].boxLines then
+                                for _, line in ipairs(espObjects[espKey].boxLines) do
+                                    line:Remove()
+                                end
+                                espObjects[espKey].boxLines = nil
+                            end
+                        end
+
+                        -- 绘制距离
+                        if drawDistance then
+                            if not espObjects[espKey] or not espObjects[espKey].distanceText then
+                                espObjects[espKey] = espObjects[espKey] or {}
+                                espObjects[espKey].distanceText = Drawing.new("Text")
+                                espObjects[espKey].distanceText.Color = Color3.fromRGB(255, 255, 0)
+                                espObjects[espKey].distanceText.Size = 20
+                                espObjects[espKey].distanceText.Visible = true
+                            end
+                            espObjects[espKey].distanceText.Position = Vector2.new(cf.X, cf.Y + 50)
+                            espObjects[espKey].distanceText.Text = "[" .. string.format("%.2f", distance) .. " m]"
+                        else
+                            if espObjects[espKey] and espObjects[espKey].distanceText then
+                                                                espObjects[espKey].distanceText = nil
+                            end
+                        end
+
+                        -- 绘制射线
+                        if drawRay then
+                            if not espObjects[espKey] or not espObjects[espKey].ray then
+                                espObjects[espKey] = espObjects[espKey] or {}
+                                espObjects[espKey].ray = Drawing.new("Line")
+                                espObjects[espKey].ray.Color = Color3.fromRGB(255, 0, 0)
+                                espObjects[espKey].ray.Thickness = 2
+                                espObjects[espKey].ray.Visible = true
+                            end
+                            espObjects[espKey].ray.From = Vector2.new(workspace.CurrentCamera.ViewportSize.X / 2, 0)
+                            espObjects[espKey].ray.To = Vector2.new(cf.X, cf.Y)
+                        else
+                            if espObjects[espKey] and espObjects[espKey].ray then
+                                espObjects[espKey].ray:Remove()
+                                espObjects[espKey].ray = nil
+                            end
+                        end
+                    else
+                        -- 如果角色不存在，移除对应的ESP对象
+                        local espKey = player.UserId
+                        if espObjects[espKey] then
+                            if espObjects[espKey].boxLines then
+                                for _, line in ipairs(espObjects[espKey].boxLines) do
+                                    line:Remove()
+                                end
+                            end
+                            if espObjects[espKey].distanceText then
+                                espObjects[espKey].distanceText:Remove()
+                            end
+                            if espObjects[espKey].ray then
+                                espObjects[espKey].ray:Remove()
+                            end
+                            espObjects[espKey] = nil
+                        end
+                    end
+                end
+                task.wait(0) -- 尽量减少等待时间，但注意不要过于占用资源
+            end
+            -- 停止ESP绘制时，移除所有绘制的对象
+            for _, espObj in pairs(espObjects) do
+                if espObj.boxLines then
+                    for _, line in ipairs(espObj.boxLines) do
+                        line:Remove()
+                    end
+                end
+                if espObj.distanceText then
+                    espObj.distanceText:Remove()
+                end
+                if espObj.ray then
+                    espObj.ray:Remove()
+                end
+            end
+        end)
+    else
+        -- 停止ESP绘制
+        for _, espObj in pairs(espObjects) do
+            if espObj.boxLines then
+                for _, line in ipairs(espObj.boxLines) do
+                    line:Remove()
+                end
+            end
+            if espObj.distanceText then
+                espObj.distanceText:Remove()
+            end
+            if espObj.ray then
+                espObj.ray:Remove()
+            end
+        end
+        espObjects = {}
+    end
+end
+
+-- 自瞄功能全局变量
+local aimbotEnabled = false
+local fovCircleEnabled = false
+local fovCircleRadius = 100
+local smoothness = 0.1
+local lockStrength = 5 -- 锁定强度
+local enableSmoothness = true -- 是否启用预判调整
+local fovCircle = nil
+
+-- 创建 FOV 圈
+local function createFOVCircle()
+    if fovCircleEnabled then
+        if not fovCircle then
+            fovCircle = Drawing.new("Circle")
+            fovCircle.Color = Color3.fromRGB(255, 255, 0)
+            fovCircle.Thickness = 2
+            fovCircle.Transparency = 0.7
+            fovCircle.Filled = false
+        end
+        fovCircle.Radius = fovCircleRadius
+        fovCircle.Position = Vector2.new(workspace.CurrentCamera.ViewportSize.X / 2, workspace.CurrentCamera.ViewportSize.Y / 2)
+        fovCircle.Visible = true
+    else
+        if fovCircle then
+            fovCircle:Remove()
+            fovCircle = nil
+        end
+    end
+end
+
+-- 获取准星最近的玩家
+local function getClosestPlayerToCrosshair()
+    local closestPlayer = nil
+    local closestDistance = fovCircleRadius
+
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+            local rootPart = player.Character.HumanoidRootPart
+            local screenPos = workspace.CurrentCamera:WorldToViewportPoint(rootPart.Position)
+            local distance = (Vector2.new(screenPos.X, screenPos.Y) - Vector2.new(workspace.CurrentCamera.ViewportSize.X / 2, workspace.CurrentCamera.ViewportSize.Y / 2)).Magnitude
+
+            if distance < closestDistance then
+                closestDistance = distance
+                closestPlayer = player
+            end
+        end
+    end
+
+    return closestPlayer
+end
+
+-- 自瞄逻辑
+local function aimAtPlayer()
+    if aimbotEnabled then
+        local target = getClosestPlayerToCrosshair()
+        if target and target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
+            local rootPart = target.Character.HumanoidRootPart
+            local targetPosition = rootPart.Position
+
+            -- 预判调整
+            if enableSmoothness then
+                targetPosition = targetPosition + rootPart.Velocity * smoothness
+            end
+
+            -- 锁定强度调整
+            local direction = (targetPosition - workspace.CurrentCamera.CFrame.Position).Unit
+            local newCFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position, targetPosition)
+            workspace.CurrentCamera.CFrame = workspace.CurrentCamera.CFrame:lerp(newCFrame, 1 / lockStrength)
+        end
+    end
+end
+
+-- 创建 UI
+local EspTab = Window:CreateTab("透视")
+local AimTab = Window:CreateTab("自瞄")
+
+-- ESP 功能按钮
+EspTab:CreateToggle({
+    Name = "ESP 绘制其他玩家",
+    CurrentValue = espEnabled,
+    Callback = function(value)
+        toggleESP(value)
+    end,
+})
+
+EspTab:CreateToggle({
+    Name = "绘制方框",
+    CurrentValue = drawBox,
+    Callback = function(value)
+        drawBox = value
+    end,
+})
+
+EspTab:CreateToggle({
+    Name = "绘制距离",
+    CurrentValue = drawDistance,
+    Callback = function(value)
+        drawDistance = value
+    end,
+})
+
+EspTab:CreateToggle({
+    Name = "绘制射线",
+    CurrentValue = drawRay,
+    Callback = function(value)
+        drawRay = value
+    end,
+})
+
+-- 自瞄功能
+AimTab:CreateToggle({
+    Name = "开启自瞄",
+    CurrentValue = aimbotEnabled,
+    Callback = function(value)
+        aimbotEnabled = value
+    end,
+})
+
+AimTab:CreateToggle({
+    Name = "显示自瞄 FOV 圈",
+    CurrentValue = fovCircleEnabled,
+    Callback = function(value)
+        fovCircleEnabled = value
+        createFOVCircle()
+    end,
+})
+
+AimTab:CreateSlider({
+    Name = "自瞄 FOV 圈大小",
+    Range = {50, 500},
+    Increment = 10,
+    Suffix = " studs",
+    CurrentValue = fovCircleRadius,
+    Callback = function(value)
+        fovCircleRadius = value
+        createFOVCircle()
+    end,
+})
+
+AimTab:CreateSlider({
+    Name = "预判参数",
+    Range = {0.1, 1},
+    Increment = 0.1,
+    Suffix = " 秒",
+    CurrentValue = smoothness,
+    Callback = function(value)
+        smoothness = value
+    end,
+})
+
+-- 新增功能：锁定强度
+AimTab:CreateSlider({
+    Name = "锁定强度/速度",
+    Range = {1, 10},
+    Increment = 1,
+    Suffix = " 级",
+    CurrentValue = lockStrength,
+    Callback = function(value)
+        lockStrength = value
+    end,
+})
+
+-- 新增功能：启用或禁用预判调整
+AimTab:CreateToggle({
+    Name = "启用预判调整",
+    CurrentValue = enableSmoothness,
+    Callback = function(value)
+        enableSmoothness = value
+    end,
+})
+
+-- 主循环
+task.spawn(function()
+    while true do
+        aimAtPlayer()
+        task.wait()
+    end
+end)
+
+-- 6. 按钮(Button)示例
+EspTab:CreateToggle({
+    Name = "透视",
+    Callback = function()
+        print("按钮被点击了!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
+    end
+})
+
+-- 6. 按钮(Button)示例
+AimTab:CreateToggle({
+    Name = "阿尔宙斯自瞄",
+    Callback = function()
+        print("按钮被点击了!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/sgbs/main/%E4%B8%81%E4%B8%81%20%E6%B1%89%E5%8C%96%E8%87%AA%E7%9E%84.txt"))()
+    end
+})
+
+-- 6. 按钮(Button)示例
+AimTab:CreateToggle({
+    Name = "锁人自瞄",
+    Callback = function()
+        print("按钮被点击了!")
+    getgenv().Camlock_Settings = {
+        Prediction = 0.151,
+        AimPart = "HumanoidRootPart",
+        Key = "q",
+        AutoPrediction = false,
+        Notification = true,
+        Button = true,
+        AntiGroundShots = false,
+        UnderGroundResolver = false,
+
+        Version = "2.5.1",
+        Credits = "space_0999",
+        DiscordServer = "discord.gg/SKhamGzTdn"
+    }
+    
+    
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/elxocasXD/Trip-Hub/main/Scripts/Cam%20Lock.lua'))()
+    end
+})
